@@ -1,6 +1,7 @@
 from django import forms
 from .models import Employee
 
+<<<<<<< HEAD
 class EmployeeForm(forms.ModelForm):
     class Meta:
         model = Employee
@@ -16,3 +17,9 @@ class EmployeeForm(forms.ModelForm):
         self.fields['emp_code'].required = False
         
         
+=======
+class Employee_form(forms.ModelForm):
+    class meta:
+        model = Employee
+        fields = '__all__'
+>>>>>>> 4656793f087924959e111ab607ecbf7722f9f038
